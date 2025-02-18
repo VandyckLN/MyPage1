@@ -1,170 +1,26 @@
-
-        <!DOCTYPE html>
+<!DOCTYPE html>
         <html lang="pt-br">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Landing Page de Vendas</title>
-            <style>
-                body {
-                    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                    background-color: #000; /* Plano de fundo preto */
-                    color: #fff;
-                    margin: 0;
-                    padding: 0;
-                    overflow-x: hidden;
-                }
-                .background {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: url('background.jpg') no-repeat left top;
-                    background-color: #000; /* Plano de fundo preto */
-                    background-size: 10%;
-                    z-index: -1;
-                }
-                .logo-container {
-                    position: absolute;
-                    top: 20px;
-                    left: 20px;
-                }
-                .logo {
-                    width: 100px; /* Ajuste o tamanho conforme necessário */
-                    height: auto;
-                    
-                }
-                .button-container {
-                    position: absolute;
-                    top: 20px;
-                    right: 20px;
-                }
-                button {
-                    font-size: 16px;
-                    background-color: #37ff14b4;
-                    color: #000;
-                    border: none;
-                    border-radius: 1px;
-                    padding: 10px;
-                    margin: 10px;
-                    cursor: pointer;
-                }
-                .container {
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    padding: 20px;
-                }
-                .header {
-                    text-align: center;
-                    padding: 50px 0;
-                }
-                .header h1 {
-                    color: #39ff14;
-                    font-size: 48px;
-                    margin-bottom: 10px;
-                }
-                .header p {
-                    font-size: 24px;
-                    color: #39ff14;
-                }
-                .video-container {
-                    text-align: center;
-                    margin: 50px 0;
-                }
-                video {
-                    width: 80%;
-                    max-width: 600px;
-                    border-radius: 8px;
-                    border: 4px solid #39ff14; /* Borda verde de 4px */
-                }
-                .benefits {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
-                    margin: 50px 0;
-                }
-                .benefit {
-                    flex: 1 1 300px;
-                    margin: 10px;
-                    padding: 20px;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    border-radius: 8px;
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-                    text-align: center;
-                }
-                .benefit h2 {
-                    color: #39ff14;
-                    font-size: 24px;
-                    margin-bottom: 10px;
-                }
-                .benefit p {
-                    font-size: 16px;
-                    color: #fff;
-                }
-                .form-container {
-                    text-align: center;
-                    margin: 50px 0;
-                }
-                .form-container form {
-                    display: inline-block;
-                    text-align: left;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    padding: 20px;
-                    border-radius: 8px;
-                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-                }
-                .form-container label {
-                    display: block;
-                    margin-bottom: 5px;
-                    font-weight: bold;
-                    color: #39ff14;
-                }
-                .form-container input, .form-container select {
-                    width: 100%;
-                    padding: 10px;
-                    margin-bottom: 15px;
-                    border: 1px solid #ddd;
-                    border-radius: 4px;
-                    background-color: #000;
-                    color: #39ff14;
-                }
-                .form-container button {
-                    width: 100%;
-                    padding: 10px;
-                    font-size: 16px;
-                    background-color: #39ff14;
-                    color: #000;
-                    border: none;
-                    border-radius: 4px;
-                    cursor: pointer;
-                }
-                .form-container button:hover {
-                    background-color: #32cd32;
-                }
-                .footer {
-                    text-align: center;
-                    padding: 20px;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    color: #777;
-                }
-                .footer a {
-                    color: #1877f2;
-                    text-decoration: none;
-                }
-                .footer a:hover {
-                    text-decoration: underline;
-                }
-            </style>
+            <title>Personal Training </title>
+            <link rel="stylesheet" href="Style/Style.css">                
+    
         </head>
         <body>
+
+            <div id="home"class="logo">
+                <img src="MinhalogoPersonal.jpeg" alt="Logo Personal"  width="200">
+
+            </div>
             <div class="background"></div>
            
             <div class="button-container">
-                <button>Sobre mim</button>
-                <button>Academias que Atendo</button>
-                <button>Consultorias Online</button>
-                <button>Contato</button>
+                <a href="#home"class="button" >Home</a>
+                <a href="#sobreMim" class="button">Sobre Mim</a>
+                <a href="#footer" class="button">Academias</a>
+               <a href="#Email" class="button">Contato</a>
+            
             </div>
             <div class="container">
                 <div class="header">
@@ -190,74 +46,33 @@
                         <h2>Suporte Contínuo</h2>
                         <p>Suporte Contínuo: Tenha acesso a um suporte contínuo para tirar dúvidas, ajustar o plano de treino e manter a motivação em alta.</p>
                     </div>
-                <div><strong>Sobre Mim</strong> <br>
-
+                <div class="Sobre" id="sobreMim"> <strong>Sobre Mim</strong> 
+                    <br>
+                    <p>
                     Desde 2017, tenho dedicado minha vida à musculação e ao treinamento físico, transformando não apenas corpos, mas também vidas. Com especialização em Avaliação e Prescrição de Treinamentos para Grupos Especiais, sou capacitado para atender às necessidades de cada pessoa, seja para alcançar objetivos específicos, melhorar a qualidade de vida ou reabilitar-se após lesões.
-                    
+                    <br>
                     Minha formação inclui cursos em Metodologias Globais de Treinamento Funcional e Cross Training, o que me permite criar programas dinâmicos, eficientes e adaptados às individualidades de cada aluno. Além disso, tenho experiência em reabilitar pessoas recuperadas de lesões, ajudando-as a recuperar a confiança e a força física de forma segura e progressiva.
-                    
+                    <br>
                     A paixão pelo movimento começou cedo: treino desde os 14 anos de idade, e essa vivência me ensinou que um corpo equilibrado vai muito além da estética – é a união entre saúde física e mental. Por isso, meu lema é: "Corpo são, mente sã". Acredito que o treino é uma ferramenta poderosa para fortalecer não apenas músculos, mas também a autoestima, a disciplina e a resiliência.
-                    
+                    <br>
                     Meu objetivo é guiar você em uma jornada de transformação, com treinos personalizados, acompanhamento dedicado e muita motivação. Vamos juntos superar limites, alcançar seus objetivos e construir uma versão mais forte, saudável e confiante de você!</div>
-                
-                    <div class="form-container">
-                    <h2>Cadastre-se Agora</h2>
-                    <form id="cadastroForm">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        
-                        <label for="telefone">Telefone:</label>
-                        <div class="phone-group">
-                            <input type="tel" id="ddd" name="ddd" placeholder="DDD" pattern="\d{2}" required>
-                            <input type="tel" id="telefone" name="telefone" placeholder="Número" pattern="\d{8,9}" required>
-                        </div>
-                        
-                        <label for="endereco">Endereço:</label>
-                        <input type="text" id="endereco" name="endereco" required>
-                        
-                        <label for="cidade">Cidade:</label>
-                        <input type="text" id="cidade" name="cidade" required>
-                        
-                        <label for="estado">Estado:</label>
-                        <select id="estado" name="estado" required>
-                            <option value="">Selecione</option>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                        </select>
-                        
-                        <button type="submit">Enviar</button>
-                    </form>
+                <br></p>
+                </div>
+                   <div>
+                    <p >Vou te ensinar sobre o seu corpo.
+                        <br>
+                        Além dos exercícios, vou te explicar como cada movimento funciona, quais músculos estão sendo trabalhados e como você pode melhorar sua postura no dia a dia. Você vai sair daqui não só mais forte, mas também mais consciente do seu corpo.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="MeuObjetivo"> <strong>Meu Objetivo </strong> 
+                        <br>
+                        Meu objetivo é guiar você em uma jornada de transformação, com treinos personalizados, acompanhamento dedicado e muita motivação. Vamos juntos superar limites, alcançar seus objetivos e construir uma versão mais forte, saudável e confiante de você!
+                    </div>
+                    <br></p>
                 </div>
                 <div class="footer">
-                    <p>Já tem uma conta? <a href="#">Entrar</a></p>
+                    <p>Já tem uma conta? <a href="Login.Html">Entrar</a></p>
                 </div>
             </div>
             <script>
@@ -279,5 +94,66 @@
                     }
                 });
             </script>
+            <footer><div class="academy-table-container" id="footer">
+                <h2>Academias que Atendo </h2>
+                <table class="academy-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                        
+                            <th>Telefone</th>
+                            <th>Unidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> vibe <br> </td>
+                          
+                            <td><br>(83) 3023-1479</td>
+                            <td><br>Bancários, Bem Mais e Miramar</td>
+                        </tr>
+                        <tr>
+                            <td><br>Selfit</td>
+                            <td><br>(83) 98147-6187</td>
+                            <td><br>Mag Shoping, Bessa , Epitacio Pessoa</td>
+                        </tr>
+                        <tr>
+                            <td> <br>Korpus </td>
+                            <td><br> (83) 3142-2400</td>
+                            <td><br>Bessa, Altiplano e Manaira</td>
+
+                            <tr>
+                                <td> <br>BlueFit</td>
+                                <td><br> (83) 3023-1479</td>
+                                <td><br> Livmall, Epitacio</td>
+                            </tr>
+                            <tr>
+                                <td> <br>Fyb</td>
+                                <td><br> (83) 3023.1771</td>
+                                <td><br> Jardim Oceania </td>
+
+                                <tr>
+                                    <td> <br>Formula</td>
+                                    <td><br> (83) 3031-1827</td>
+                                    <td><br> Jardim Oceania</td>
+                                    </tr>
+
+                        </tr>
+                        <tr></tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="entreemcontatoButton">
+                <a href="https://api.whatsapp.com/send/?phone=5583996514717&text&type=phone_number&app_absent=0" target="_blank" class="button">WhatsApp</a>
+            </div>
+               
+                </div>
+            </div>
+             <p id="Email"class="Email">E-mail : vdkd3v@gmail.com</p>
+<img  class="Card" src= "Card.jpeg" alt="card">
+
+<p class="copyright">Copyright © 2025 Vandyck Diniz | Criado Por Vandyck Diniz </p>
+        </footer>
         </body>
-        </html>        
+        </html>

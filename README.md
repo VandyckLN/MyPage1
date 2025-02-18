@@ -1,159 +1,26 @@
-# Projeto Pagina Web 1
+# Cadastro de Clientes
 
-## Descrição
-Este projeto é uma aplicação web básica baseada em HTML, JavaScript e CSS3. Ele consiste em várias páginas, incluindo `entrada.Html`, `Index.Html`, `Index.js` e `cadastro.Html`. O objetivo é demonstrar o uso de HTML para estruturar o conteúdo, JavaScript para adicionar interatividade e CSS3 para estilizar a página.
+Este projeto é uma página de cadastro de clientes que permite aos usuários inserir informações como nome, email, telefone, endereço, cidade e estado. Após o envio do formulário, uma mensagem de confirmação é exibida.
 
-## Estrutura dos Arquivos
+## Ferramentas Utilizadas
 
-### entrada.Html
-`entrada.Html` é a página de login do projeto. Ela inclui um formulário de login com campos para nome de usuário e senha, estilizados com CSS3.
+### HTML
+O HTML (HyperText Markup Language) é a linguagem padrão para criar páginas web. Ele é utilizado para estruturar o conteúdo da página, definindo elementos como formulários, botões e textos.
 
-```html
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de Login</title>
-    <style>
-      body {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        overflow: hidden;
-      }
-      .background {
-        position: fixed;
-        top: -27%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("background.jpg") no-repeat center center;
-        background-size: 15%;
-      }
-      .container {
-        position: fixed;
-        z-index: 1;
-        width: 300px;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.8);
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        text-align: center;
-      }
-      h1 {
-        color: #39ff14;
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-      }
-      label {
-        text-align: left;
-        margin-bottom: 5px;
-        font-weight: bold;
-        color: #39ff14;
-      }
-      input {
-        margin-bottom: 15px;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #39ff14;
-        border-radius: 4px;
-        width: 100%;
-        background-color: #000;
-        color: #39ff14;
-      }
-      input::placeholder {
-        color: #39ff14;
-      }
-      button {
-        padding: 10px;
-        font-size: 16px;
-        background-color: #39ff14;
-        color: #000;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        margin-top: 10px;
-      }
-      button:hover {
-        background-color: #32cd32;
-      }
-      .message {
-        margin-top: 20px;
-        padding: 10px;
-        background-color: #dff0d8;
-        color: #3c763d;
-        border: 1px solid #d6e9c6;
-        border-radius: 4px;
-        display: none;
-      }
-      .error {
-        margin-top: 20px;
-        padding: 10px;
-        background-color: #f8d7da;
-        color: #721c24;
-        border: 1px solid #f5c6cb;
-        border-radius: 4px;
-        display: none;
-      }
-      .text {
-        color: #ffffff;
-        font-size: 80%;
-        margin-top: 3%;
-        border: none;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="background"></div>
-    <div class="container">
-      <h1>Login</h1>
-      <form id="loginForm">
-        <label for="username">Nome de Usuário:</label>
-        <input type="text" id="username" name="username" required />
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required />
-        <button type="submit">Entrar</button>
-      </form>
-      <div class="message" id="message">Login realizado com sucesso!</div>
-      <div class="error" id="error">Nome de usuário ou senha incorretos.</div>
-      <div class="text">Vamos juntos transformar seus objetivos em <strong>realidade!</strong></div>
-    </div>
-    <script>
-      document
-        .getElementById("loginForm")
-        .addEventListener("submit", async function (event) {
-          event.preventDefault();
-          const username = document.getElementById("username").value;
-          const password = document.getElementById("password").value;
+### CSS
+O CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para descrever a apresentação de um documento escrito em HTML. Ele é utilizado para estilizar a página, tornando-a visualmente agradável e responsiva. No projeto, o CSS foi utilizado para definir o layout, cores, fontes e espaçamentos.
 
-          const response = await fetch("/login", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ username, password }),
-          });
+### JavaScript
+O JavaScript é uma linguagem de programação que permite a criação de conteúdo dinâmico e interativo na web. No projeto, o JavaScript foi utilizado para adicionar um evento de envio ao formulário, que exibe uma mensagem de confirmação quando o formulário é enviado.
 
-          const result = await response.json();
+## Estrutura do Projeto
 
-          if (result.success) {
-            document.getElementById("message").style.display = "block";
-            document.getElementById("error").style.display = "none";
-          } else {
-            document.getElementById("message").style.display = "none";
-            document.getElementById("error").style.display = "block";
-          }
-        });
-    </script>
-  </body>
-</html>
+- `Cadastro.html`: Arquivo HTML que estrutura a página de cadastro de clientes.
+- `style.css`: Arquivo CSS que estiliza a página de cadastro.
+- `script.js`: Arquivo JavaScript que adiciona interatividade ao formulário de cadastro.
+
+## Como Configurar e Executar o Projeto
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/VandyckLN/Mypage.git
