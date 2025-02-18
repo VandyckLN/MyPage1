@@ -1,26 +1,32 @@
-# Cadastro de Clientes
+Projeto Pagina Web 1
+Descrição
+Este projeto é uma aplicação web básica baseada em HTML e JavaScript.
 
-Este projeto é uma página de cadastro de clientes que permite aos usuários inserir informações como nome, email, telefone, endereço, cidade e estado. Após o envio do formulário, uma mensagem de confirmação é exibida.
+Estrutura dos Arquivos
+index.html
+O arquivo index.html é a página principal do projeto. Ele define a estrutura básica da página web utilizando HTML. Aqui estão algumas funcionalidades e ferramentas utilizadas:
 
-## Ferramentas Utilizadas
+Estrutura HTML: Define a estrutura básica da página com elementos como <div>, <header>, <footer>, etc.
+Links e Scripts: Inclui links para arquivos CSS e scripts JavaScript necessários para o funcionamento da página.
+Formatação e Estilo: Utiliza classes e IDs para aplicar estilos CSS e tornar a página visualmente atraente.
+index.js
+O arquivo index.js é responsável por funcionalidades interativas utilizando JavaScript. Aqui estão algumas funcionalidades e ferramentas utilizadas:
 
-### HTML
-O HTML (HyperText Markup Language) é a linguagem padrão para criar páginas web. Ele é utilizado para estruturar o conteúdo da página, definindo elementos como formulários, botões e textos.
-
-### CSS
-O CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para descrever a apresentação de um documento escrito em HTML. Ele é utilizado para estilizar a página, tornando-a visualmente agradável e responsiva. No projeto, o CSS foi utilizado para definir o layout, cores, fontes e espaçamentos.
-
-### JavaScript
-O JavaScript é uma linguagem de programação que permite a criação de conteúdo dinâmico e interativo na web. No projeto, o JavaScript foi utilizado para adicionar um evento de envio ao formulário, que exibe uma mensagem de confirmação quando o formulário é enviado.
-
-## Estrutura do Projeto
-
-- `Cadastro.html`: Arquivo HTML que estrutura a página de cadastro de clientes.
-- `style.css`: Arquivo CSS que estiliza a página de cadastro.
-- `script.js`: Arquivo JavaScript que adiciona interatividade ao formulário de cadastro.
-
-## Como Configurar e Executar o Projeto
-
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/VandyckLN/Mypage.git
+Biblioteca React: Utiliza React para criar componentes reutilizáveis e gerenciar o estado da aplicação.
+React Native Video: Utiliza a biblioteca react-native-video para incorporar e controlar vídeos.
+Hooks do React: Utiliza hooks como useRef e useEffect para controlar o comportamento do vídeo.
+Estilos em JavaScript: Define estilos utilizando StyleSheet do React Native.
+Funcionalidades do index.js
+Controle de Vídeo: Inicia o vídeo em 0:47 e reinicia a cada 60 segundos, terminando em 1:47.
+Estilos Personalizados: Aplica estilos personalizados ao vídeo e ao contêiner que o envolve.
+Ferramentas Utilizadas
+HTML: Utilizado para criar a estrutura básica da página.
+JavaScript: Utilizado para adicionar funcionalidades interativas.
+React: Utilizado para criar componentes reutilizáveis.
+React Native: Utilizado para estilizar e controlar o vídeo.
+React Native Video: Biblioteca utilizada para incorporar e controlar vídeos na aplicação.
+Instruções para Executar
+Clone o repositório.
+Navegue até o diretório do projeto.
+Instale as dependências utilizando npm install.
+Execute o projeto utilizando npm start.
